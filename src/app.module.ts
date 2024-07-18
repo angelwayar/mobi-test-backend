@@ -10,7 +10,7 @@ import { MongooseModule } from '@nestjs/mongoose';
   imports: [
     FileModule,
     ConfigModule.forRoot({ isGlobal: true }),
-    MongooseModule.forRoot('mongodb+srv://test:test-123@test.sf4gqyf.mongodb.net/?retryWrites=true&w=majority&appName=test'),
+    MongooseModule.forRoot('STR_CONNECTION'),
   ],
   controllers: [AppController],
   providers: [AppService],
